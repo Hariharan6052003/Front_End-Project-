@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title> Stone--Paper--Scissor_Game</title>
+
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <link rel="stylesheet" href="styleon.css">
+
+    <body>
+        <nav>
+           <center>
+            <h class="hh"> STONE PAPER SCISSOR </h>
+           </center>
+        </nav>
+        
+        <div class ="option">
+    
+        <button class ="stone" choice ="stone" onclick="main()" > </button>
+        <button class ="paper"  choice ="paper" onclick="main()"></button>
+        <button class = "scissor"  choice ="scissor" onclick="main()"></button>
+    <div>
+    <div class="result">
+        <label class="pl" for="plaimg" >player </label>
+        <label class ="co" for="comimg" >computer </label>
+        <label class ="re" for="loading" >result </label>
+        <img src="img/player.jpg" class="plaimg" id="player" />
+        <img src="img/vss.png" class="vssimg">
+        <img src ="img/computer.webp"class="comimg" id="comp">
+        <img src ="img/vid/loading.gif" class="loadimg" id="out">
+        
+    </div>
+    </center>
+    </body>
+
+    <script>
+        function main(){
+        const num =Math.floor(Math.random()*10);
+        let player =  event.target.getAttribute('choice');
+        let res = "";
+       
+        let comp_mov ="";
+    
+        console.log(player);
+        console.log(num);
+        
+        
+        if(num > 0 && num < 3)
+           {
+            comp_mov ="paper";
+           }
+        else if(num >3 && num <= 6)
+           {
+            comp_mov ="scissor";
+           }
+        else{
+             comp_mov ="stone";
+           }
+         
+         if(player === 'stone'){
+                                    if(comp_mov === 'paper')
+                                    {     
+                                         document.getElementById("comp").src ='img/paper.jpg';
+                                         document.getElementById("out").src ="img/vid/noo.gif"
+                                         document.getElementById("player").src ='img/stone.png';
+                                         result = "you lose";
+                                        
+                                        
+                
+                                          
+                                    }
+                                    else if(comp_mov ==='stone')
+                                    {
+                                        document.getElementById("comp").src ="img/stone.png";
+                                        document.getElementById("out").src ="img/vid/tied.gif";
+                                        document.getElementById("player").src ='img/stone.png';
+                                        result = "Match tied";
+                                       
+                                    }
+                                     else
+                                     {  document.getElementById("comp").src ="img/scissor.jpg";
+                                     document.getElementById("out").src ="img/vid/yess.gif";
+                                     document.getElementById("player").src ='img/stone.png';
+                                     result = "you won";
+                                        
+                                     }
+            }
+        else if(player === 'paper'){
+                                    if(comp_mov === 'paper'){
+                                        document.getElementById("comp").src ="img/paper.jpg";
+                                         document.getElementById("out").src ="img/vid/tied.gif";
+                                         document.getElementById("player").src ='img/paper.jpg';
+                                         result = "Match tied";
+                                        
+                                    
+                                } 
+                                else if(comp_mov ==='stone'){
+                                    document.getElementById("comp").src ="img/stone.png";
+                                     document.getElementById("out").src ="img/vid/yess.gif";
+                                     document.getElementById("player").src ='img/paper.jpg';
+                                     result  = "you won";
+                                }
+                                else{
+                                    document.getElementById("comp").src ="img/scissor.jpg";
+                                     document.getElementById("out").src ="img/vid/noo.gif";
+                                     document.getElementById("player").src ='img/paper.jpg';
+                                     result = "you lose";
+                                    
+                                }
+               }
+        else if(player === 'scissor'){
+                                    if(comp_mov === 'paper'){
+                                    document.getElementById("comp").src ="img/paper.jpg";
+                                     document.getElementById("out").src ="img/vid/yess.gif";
+                                     document.getElementById("player").src ='img/scissor.jpg';
+                                     result  = "you won";
+                                    
+                                }
+                                else if(comp_mov ==='stone'){
+                                    document.getElementById("comp").src ="img/stone.png";
+                                     document.getElementById("out").src ="img/vid/noo.gif";
+                                     document.getElementById("player").src ='img/scissor.jpg';
+                                     result = "you lose";
+                                }
+                                else{
+                                    document.getElementById("comp").src ="img/scissor.jpg";
+                                     document.getElementById("out").src ="img/vid/tied.gif"
+                                     document.getElementById("player").src ='img/scissor.jpg';
+                                     result = "Match tied";
+                                    
+                                }
+              }  
+           
+     
+        }
+    </script>
+    
+    </html>

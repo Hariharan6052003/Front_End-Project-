@@ -1,0 +1,246 @@
+
+.pl{
+    position: absolute; 
+    font-size:35px;
+    left:100px; 
+    margin-top:-40px;
+
+}
+.co{
+    position: absolute;
+     font-size:35px;
+      left:650px;
+     margin-top:-40px;
+
+}
+
+.re{
+    position: absolute; 
+    font-size:35px; 
+    left:83%; 
+    margin-top:-40px;
+
+}
+
+
+.hh{
+    font-family: fantasy; font-size: 60px;
+}
+.plaimg{
+    height:250px;width:300px;margin-right:10px;
+}
+
+    .result{
+        position:fixed;
+        margin-top:70px;
+        margin-left:45px;
+        height:290px;
+        width:1450px;           
+
+    }
+    .comimg{
+        position:absolute;
+        height:250px;
+        width:300px;
+        margin-left:280px;
+     
+    }
+    .vssimg{
+        position:absolute;
+        margin-left:-15px;
+        height:250px;
+        width:300px;
+       
+    }
+    .loadimg{
+        position:absolute;
+        height:270px;
+        width:400px;
+        margin-left:740px;
+    }
+
+    .option{
+        margin-top: 10px;
+        height: 360px;
+        width:100%;
+        
+    }
+    body{
+        background-image: linear-gradient(rgb(255, 21, 0), rgb(43, 0, 255));
+    
+    }
+nav{
+ height:80px;
+animation-name: example;
+animation-duration:5s;
+animation-iteration-count: infinite;
+}
+@keyframes example{
+5%  {color:rgb(245, 245, 245); background-color:red; box-shadow: red 7px 7px 15px;}
+16%  {color:rgb(255, 0, 0);background-color: yellow; box-shadow: yellow 7px 7px 15px;}
+32%  {color:rgb(21, 255, 0); background-color: (11, 138, 22); box-shadow: green 7px 7px 15px;}
+48% {color:rgb(0, 0, 0); background-color: (0, 237, 241); box-shadow: rgb(0, 237, 241) 7px 7px 15px;}
+64% {color: aqua;background-color: rgb(44, 0, 241); box-shadow: blue 7px 7px 15px;}
+82% {color:rgb(5, 251, 165); background-color: (248, 0, 248); box-shadow: rgb(248, 0, 248) 7px 7px 15px;}
+100%{color:white;background-color: rgb(255, 0, 183); box-shadow: rgb(255, 0, 183)  7px 7px 15px;}
+
+}
+
+@keyframes example1{
+5%  {color:rgb(187, 37, 37); }
+16%  {color:rgb(255, 0, 0);}
+32%  {color:rgb(21, 255, 0);}
+48% {color:rgb(0, 0, 0); }
+64% {color: aqua;}
+82% {color:rgb(5, 251, 165);}
+100%{color:white;}
+
+}
+
+.stone{
+
+height: 350px;
+width : 400px;
+margin-left:40px;
+background :url('img/stone.png');
+background-size: 550px;
+background-position: -55px;
+animation-name: example;
+animation-duration:5s;
+animation-iteration-count: infinite;
+
+
+
+}
+.paper{
+margin-left:120px;
+height: 350px;
+width : 400px;
+background :url('img/paper.jpg');
+background-size: 370px;
+background-position: 10px;
+animation-name: example;
+animation-duration:5s;
+animation-iteration-count: infinite;
+
+
+}
+.scissor{
+margin-left: 120px;
+height: 350px;
+width : 400px;
+background :url('img/scissor.jpg');
+background-size: 360px;
+background-position: 15px;
+animation-name: example;
+animation-duration:5s;
+animation-iteration-count: infinite;
+
+
+}
+.stone:hover,.scissor:hover,.paper:hover{
+
+filter:brightness(75%);
+height:352.5px;
+width:402.5px;
+transition-duration:0.3s;
+}
+
+@media only screen and (max-width:800px){
+    
+    nav{
+        
+            height:40px;
+            width:390px;
+    }
+    .hh{
+        font-size:35px;
+    }
+    .option{
+        margin-top: 10px;
+        height: 200px;
+        width:408px;
+        
+    }
+    .scissor,.paper,.stone{
+        height:120px;
+        width:120px;
+        background-size: 190px;
+        background-position: -35px;
+        margin-left:5px;
+        padding:5px 5px 5px;
+
+    }
+    .paper{
+        background-size: 100px;
+        background-position: 10px;
+    }
+    .scissor{
+        background-size: 105px;
+        background-position: 10px;
+    }
+    .stone:hover,.scissor:hover,.paper:hover{
+        height:122.1px;
+        width:120.5px;
+        }
+        .result{
+            position:fixed;
+            margin-top:30px;
+            margin-left:20px;
+            height:80%;
+            width:370px;           
+    
+        }
+      
+    .plaimg{
+        position:absolute;
+        margin-top:10px;
+        margin-left:65px;
+        height:150px;
+        width:220px;
+        
+    }
+    .comimg{
+        position:absolute;
+        height:150px;
+        width:220px;
+        margin-top:300px;
+        margin-left:60px;
+    }
+    .vssimg{
+        position:absolute;
+        height:100px;
+        width:100px;
+        margin-top:170px;
+        margin-left: 115px;
+    }
+    .loadimg{
+        position:absolute;
+        margin-top:530px;
+        margin-left:50px;
+        height:160px;
+        width:260px;
+    }
+
+    .re{
+        margin-top:480px;
+        margin-left:-180px;
+        
+       }
+       .pl{
+        top:10px;
+    
+       
+       }
+       .co{
+        margin-left:-540px;
+        margin-top:260px;
+
+
+       }
+
+
+    
+}
+
+
