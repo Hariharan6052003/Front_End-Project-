@@ -1,0 +1,608 @@
+
+.container{
+
+    position:relative;
+    
+}
+
+.cart{
+  position:fixed;
+  top:0;
+  right:0;
+  width:360px;
+  height:100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border : 1px solid var(--main-color);
+  transition : 1.5s;       
+
+
+
+
+  }
+
+.cart.active{  
+  right:10%;
+  }
+
+.las1{
+  margin-top: 0%;
+  height:25px;
+  width : 65px;
+ margin-left:25px;
+  color:rgb(0, 0, 0);
+  border-radius:14px;
+  background-color: rgb(97, 191, 245);
+  box-shadow: 3px 3px 3px rgb(222, 69, 233); 
+}
+
+.lasbt{
+  height: 30px;
+  width :100%;
+  background-color: rgb(71, 79, 191);
+}
+
+.las1:hover{
+  background: rgb(222, 125, 231);
+    transition-duration:0.8s;
+    color: rgb(255, 255, 255);
+    transition : 0.9s ease;
+}
+
+.nw{
+    color: rgb(56, 195, 241);
+    font-size:40px;
+    font-family:'Courier New', monospace;
+    position:absolute;
+    top:60px;
+    right:28.5%;
+    
+}
+
+.home{
+  height:35px;
+  width : 110px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border-radius:100px;
+  background-color: rgb(122, 184, 250);
+ margin-right:150px;
+ margin-left:60px;
+ margin-top:10px;
+  box-shadow: 4px 3px 5px rgb(183, 32, 243);  
+}
+
+
+.about,.contact,.login,.follow{
+ font-size:20px;
+ margin-right:150px;
+ margin-top:10px;
+ height:35px;
+ width : 110px;
+ color:rgb(0, 0, 0);
+border-radius : 100px;
+background-color:  rgb(98, 173, 235);
+box-shadow: 6px 6px 6px rgb(183, 32, 243); 
+
+}
+
+.home:hover,.about:hover,.contact:hover,.login:hover,.follow:hover{
+
+    background: rgb(222, 125, 231);
+    transition-duration:0.8s;
+    color: rgb(255, 255, 255);
+    transition : 0.9s ease;
+    
+  }
+
+
+.tab{
+
+    background-color:rgb(71, 79, 191);
+    height:55px;
+}
+.idxhead{
+  background-color: rgb(0, 0, 0);
+  position:relative;
+  
+  
+}
+
+.idx1{
+   position: absolute;
+   height : 100%;
+   width: 100%;
+   right :-1%;
+   top:0px;
+   opacity:0.7;
+
+}
+
+.yt{
+
+  color: rgb(255, 0, 238);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:17px;
+}
+
+.yt:hover{
+  transition : 0.9s;
+  color:rgb(0, 195, 255);
+  font-size :17.5px;
+}
+
+.bt{
+  
+  color : rgb(255, 0, 238);
+  font-size:20px;
+}
+.bt:hover{
+  transition: 0.3s ease;
+  color : rgb(0, 195, 255);
+
+}
+.a1{
+  color : rgb(6, 209, 250);
+  font-size:20px;
+}
+.a1:hover{
+  transition: 0.3s ease;
+  color : rgb(252, 0, 206);
+  font-size:25px;
+
+}
+
+
+
+.but1{
+  margin-top:10px;
+ margin-left:0%;
+ height : 35px;
+ width : 250px;
+ font-size:20px;
+ border-radius : 30px;
+ background-color:  rgb(98, 173, 235);
+ box-shadow: 4px 3px 5px rgb(183, 32, 243);  
+ 
+}
+.but1:active{
+
+  
+  background: rgb(222, 125, 231);
+  color: rgb(255, 255, 255);
+
+}
+
+.comp1{
+
+  position:absolute;
+  left: 50px;
+  top:100px;
+  height:250px;
+  width:340px
+
+}
+
+.comp2{
+
+  position:absolute;
+  left: 600px;
+  top:100px;
+  height:250px;
+  width:340px
+
+}
+
+.comp3{
+
+  position:absolute;
+  left: 1100px;
+  top:100px;
+  height:250px;
+  width:340px
+
+}
+
+.comp4{
+
+  position:absolute;
+  right:1100px;
+  top:550px;
+  left :50px;
+  color:rgb(56, 195, 241); 
+}
+
+.comp5{
+
+  position:absolute;
+  right : 600px;
+  top : 550px;
+  left : 40%;
+
+}
+
+.comp6{
+
+  position:absolute;
+  left : 1100px;
+  top : 550px;
+
+}
+
+.comp7{
+
+  position:absolute;
+  right : 1170px;
+  top : 960px;
+  left :4%;
+
+}
+
+.comp8{
+
+  position:absolute;
+  right : 600px;
+  top : 960px;
+  left : 40%;
+
+}
+
+.comp9{
+
+  position:absolute;
+  left : 1100px;
+  top : 960px;
+
+}
+
+.container2{
+
+  position: relative;
+
+}
+
+.head2{
+
+  position : absolute;
+  top : 30px;
+  left: 45%;
+
+}
+
+.search{
+  position:absolute;
+  top:145px;
+  left:470px;
+  width:60% ;
+}
+
+.conmain2{
+  position:absolute;
+  top:0px;
+  right:750px
+}
+.lap{
+  position:absolute;
+  right: 250px;
+  top:200px;
+  height:250px;
+  width:340px
+}
+
+.lap2{
+  position: absolute;
+  color:rgb(36, 36, 144);
+  left: 520px;
+  top:0px;
+  height:250px;
+  width:340px
+
+}
+
+.hard{
+
+  position: absolute;
+  left: 580px;
+  top:0px;
+  height:250px;
+  width:340px;
+  color:rgb(251, 63, 63)
+}
+
+.keyb{
+
+  position:absolute;
+  right:1100px;
+  top:500px;
+  height:250px;
+  width:340px;
+  color:rgb(56, 195, 241); 
+
+}
+
+.mouse{ 
+
+  position:absolute;
+  left:530px;
+  top:0px;
+  height:250px;
+  width:340px;
+  color:rgb(36, 36, 144);
+
+}
+
+.modem{
+ 
+  position: absolute;
+  left: 575px;
+  top:0px;
+  height:250px;
+  width:340px;
+  color:rgb(251, 63, 63)
+
+}
+
+.last{
+  
+  position: absolute;
+  height:100%;
+  width:100%;
+  top:790%;
+  
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 6px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.most{
+  position:absolute;
+  right:45%;
+  width:100%;
+  
+}
+.policy{
+
+ position: absolute;
+ top:350%;
+}
+
+
+.log-pag{
+  font-size:40px;
+  font-family:'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  background : linear-gradient(to left,rgb(0, 191, 255),rgb(238, 0, 255));
+
+}
+.lo{
+  margin-top: 90px;
+  height: 600px;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.3);
+  align-content: top;
+  border-radius: 30px;
+  box-shadow: -10px 10px 37px rgb(238, 0, 255);
+  border-left:2px solid rgba(255, 255, 255, 0.3);
+  border-top:2px solid rgba(255, 255, 255, 0.3);
+}
+
+input{
+  font-size:medium;
+  width:420px;
+  border: none;
+  outline: none;
+  background:transparent;
+  color:black;
+  border-bottom:1px solid rgba(0, 0, 0, 0.7);
+}
+.lo11{
+ margin-left:40px;
+  
+}
+.lo2{
+  margin-left:5px;
+}
+.lo3{
+  margin-left:0;
+  
+}
+.logb1{
+  
+  margin-left:130px;
+  height:35px;
+  width : 200px;
+  border-radius: 15px;
+  background-color: transparent;
+  border-top:1px solid rgb(255, 255, 255,0.60);
+  border-left:1px solid rgb(255, 255, 255 ,0.67);
+  border-bottom :2px solid rgba(0, 0, 0, 0.67);
+  box-shadow: 4px 4px 10px rgb(238, 0, 255);
+
+ 
+}
+.logb12{
+  margin-top: 50px;
+  margin-left:160px;
+  height:35px;
+  width : 140px;
+  border-radius: 15px;
+  background-color: transparent;
+  border-top:1px solid rgb(255, 255, 255,0.60);
+  border-left:1px solid rgb(255, 255, 255 ,0.67);
+  border-bottom :2px solid rgba(0, 0, 0, 0.67);
+  box-shadow: 4px 4px 10px rgb(238, 0, 255);
+
+ 
+}
+
+.logb2{
+  margin-top:20px;
+  margin-left:180px;
+  height:35px;
+  width : 100px;
+  border-radius: 15px;
+  background-color: transparent;
+  border-top:1px solid rgb(255, 255, 255,0.60);
+  border-left:1px solid rgb(255, 255, 255 ,0.67);
+  border-bottom :3px solid rgba(0, 0, 0, 0.67);
+  box-shadow: 4px 4px 10px rgb(238, 0, 255);
+
+}
+
+.cart{
+  position:fixed;
+  top:0%;
+  right: -100%; 
+  width:360px;
+  height:100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family:'Courier New', monospace;
+  padding: 20px;
+  background: linear-gradient(to left,rgb(101, 210, 246),rgb(238, 0, 255));
+  box-shadow : -2px solid 4px hsl(0 4% 15% / 10%);
+  border : 2px solid rgb(0, 0, 0);
+  transition:1.5s;
+}
+
+.cart.active{
+right:0;
+transition :.5s;
+}
+
+.title-cart{
+
+
+font-size: 1.5rem;
+font-weight : 600;
+margin-top: 2rem;
+
+}
+.cart-box{
+display: grid;
+grid-template-columns: 32% 50% 18%;
+align-items: center;
+gap : 1rem;
+margin-top: 1rem;
+}
+
+.cart-img{
+height:100px;
+width:100px;
+object-fit : contain;
+padding : 10px;
+
+
+}
+.detail-box{
+display: grid;
+row-gap:.5rem;
+
+}
+.prod-title{
+font-size: 1rem;
+text-transform:uppercase;
+
+}
+.prod-price{
+font-weight: 500;
+}
+.cart-quantity{
+border : 1px solid var();
+outline-color : var();
+width: 2.4rem;
+text-align: center;
+font-size: 1rem;
+}
+
+.cart-remove{
+font-size : 24px;
+color: red;
+cursor : pointer;
+
+}
+.total{
+display :flex;
+justify-content : flex-end;
+margin-top : 1.5rem;
+border-top:1px solid var();
+
+}
+.total-title{
+font-size:1rem;
+font-weight: 600;
+}
+
+.total-price{
+margin-left : .5rem;
+
+}
+.buy-btn{
+display: flex;
+margin: 1.5rem auto 0 auto;
+padding: 12px 20px;
+border: none;
+background-color: rgb(255, 255, 255);
+color: var();
+font-size:1rem;
+font-weight: 500;
+cursor :pointer;
+border-radius:20px;
+
+}
+#cart-close{
+position : absolute;
+top : 1rem;
+right: .8rem;
+font-size:2rem;
+color: var();
+cursor: pointer;
+
+}
+
+.glabel{
+  position: absolute;
+  margin-left: 740;
+  margin-top:-45px;
+  height: 80px;
+  width: 300px;
+  font-size: medium;
+}

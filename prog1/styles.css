@@ -1,0 +1,47 @@
+.acccont {
+    position: relative;
+}
+
+.acchead {
+    width:100%;
+    position: absolute;
+    top:15px;
+    color: rgb(56, 195, 241);
+    font-size:35px;
+    font-family:'Courier New', monospace;
+}
+
+    .acc1{
+
+        position:absolute;
+        left: 50px;
+        top:100px;
+        height:250px;
+        width:340px
+      
+      }
+    
+      .las2{
+        height:25px;
+        width : 65px;
+       margin-left:25px;
+        color:rgb(0, 0, 0);
+        border-radius:14px;
+        background-color: rgb(97, 191, 245);
+        box-shadow: 3px 3px 3px rgb(222, 69, 233); 
+      }
+      
+      .lasbt{
+        height: 30px;
+        width :100%;
+        background-color: rgb(71, 79, 191);
+      }
+      
+      .las2:hover{
+        background: rgb(222, 125, 231);
+          transition-duration:0.8s;
+          color: rgb(255, 255, 255);
+          transition : 0.9s ease;
+      }
+
+

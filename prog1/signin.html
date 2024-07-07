@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="progstyle.css">
+</head>
+<body class="log-pag">
+    <form class="lo">
+        <div style="margin-left: 176px; margin-top: 40px; text-shadow: 2px 2px 4px rgba(0,0,0,0.35);">
+             <b>SIGN IN</b>
+        </div>
+        <div class="lo11">
+            <label style="font-size:25px; text-shadow: 2px 2px 4px rgba(0,0,0,0.35);"><b>Email:</b></label>
+            <br>
+            <input type="text" id="email" name="email" />
+            <div class="lo2">
+                <label style="font-size:25px; text-shadow: 2px 2px 4px rgba(0,0,0,0.35);"><b>Password:</b></label>
+                <br>
+                <input type="password" id="password" name="password" />
+            </div>
+            <input type="button" class="logb1" id="signIn" value="Sign In">
+            <br>
+            <a style="font-size:15px; margin-left:155px;"><b>Forget Password?</b></a>
+            <br>
+            <button class="logb2" formaction="prog1.html">Quit</button>
+        </div>
+    </form>
+
+   
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+
+     
+        const firebaseConfig = {
+          apiKey: "AIzaSyDxG5Js8Bfiv-EIM4WCw5ywhc3IY4Ft_bM",
+          authDomain: "authentication-app-5f43b.firebaseapp.com",
+          databaseURL: "https://authentication-app-5f43b-default-rtdb.firebaseio.com",
+          projectId: "authentication-app-5f43b",
+          storageBucket: "authentication-app-5f43b.appspot.com",
+          messagingSenderId: "651261133287",
+          appId:  "1:651261133287:web:24e4565326360381bbfd42",
+          measurementId: "G-NMQ0DDXHMF"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth();
+
+        const signInButton = document.getElementById("signIn");
+        signInButton.addEventListener("click", () => {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+    signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+        // User signed in successfully
+        const user = userCredential.user;
+
+
+    
+    alert('User signed in successfully!');
+    
+    // Redirect to prog1.html with email parameter
+    window.location.href = 'prog1.html?email=' + email;
+
+
+    })
+    .catch((error) => {
+        // Error occurred during sign-in
+        alert('Error occurred during sign in: ' + error.message);
+    });
+});
+    </script>
+</body>
+</html>
+
+
+
+    
